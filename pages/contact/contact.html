@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"> <!-- Use the most coomon character set -->
+        <meta name="description" content="Road To Hire Gateway">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Gateway Contact</title> <!-- Will render as the name of the page -->
+        <!-- Parent CSS FIle -->
+        <link rel="stylesheet" href="../../shared.css">
+        <link rel="stylesheet" href="../../index.css">
+        <!-- Local CSS FIle -->
+        <link rel="stylesheet" href="./contact.css">
+    </head>
+    <body>
+        <nav id="nav-container-contact" class="nav-container"> <!-- Navigation -->
+            <ul id="nav-link-container">
+                <li class="nav-link">
+                    <a class="nav-click-link" href="../../index.html">Home</a>
+                </li>
+                <li class="nav-link">
+                    <a class="nav-click-link" href="../todo/todo.html">To-Do</a>
+                </li>
+                <li class="nav-link">
+                    <a class="nav-click-link" href="../tech-companies/tech-companies.html">Tech Valley</a>
+                </li>
+                <li class="nav-link">
+                    <a class="nav-click-link" href="../contact/contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <main id="contact-body-container"> <!-- Body -->
+            <div class="row"> <!-- Row -->
+                <div id="contact-img-col" class="img-col"> <!-- Image Column -->
+                    <div id="contact-body-title">
+                        <h2>Contact</h2>
+                    </div>
+                    <img class="slideshow" alt="slideshow" src="https://images.pexels.com/photos/3144852/pexels-photo-3144852.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500">
+                </div>
+                <div id="contact-section-col" class="section-col"> <!-- Form Column -->
+                    <aside class="body-section-text-container">
+                        <form id="form" action="submit">
+                            <div id="form-row">
+                                <div class="form-col-left">
+                                    <label class="input-label" for="first-name">First Name *</label>
+                                    <input required type="text" name="firstName" class="input-style" id="first-name" placeholder="First Name">
+                                </div>
+                                <div class="form-col-right">
+                                    <label class="input-label" for="last-name">Last Name *</label>
+                                    <input required type="text" name="lastName" class="input-style" id="last-name" placeholder="Last Name">
+                                </div>
+                            </div> 
+                            <label class="input-label" for="phone-number">Enter your phone number *</label>
+                            <input required type="number" name="number" class="input-style" id="phone-number" placeholder="Phone Number">
+                            <br>
+                            <label class="input-label" for="email">Enter your email *</label>
+                            <input required type="email" name="email" class="input-style" id="email" placeholder="Email">
+                            <br>
+                            <label class="input-label" for="comment">Message</label>
+                            <br>
+                            <textarea id="comment" name="message" rows="3" placeholder="Write us a message"></textarea>
+                            <br>
+                            <div id="form-submit-btn-container">
+                                <button id="form-submit-btn" type="submit">Send Message</button>
+                            </div>
+                        </form>
+                    </aside>
+                </div>
+            </div>
+        </main>
+        <footer class="footer-container"> <!-- Footer -->
+            <div class="footer-row"> <!-- Row -->
+                <div class="footer-left-container"> <!-- Left Column -->
+                    <h3 class="footer-title">about</h3>
+                    <p class="footer-text">This site was created for the purpose of the R2H Gateway Program for Software Development. The site was developed using strictly HTML and CSS.</p>
+                </div>
+                <div class="footer-right-container"> <!-- Right Column -->
+                    <h3 class="footer-title">AROUND THE WEB</h3>
+                    <div class="footer-icon-container">
+                        <a href="https://twitter.com/"><img class="icon-img" alt="twitter icon" src="https://icons-for-free.com/iconfiles/png/512/social+tweet+twitter+icon-1320192248146512175.png"></a>
+                        <a href="https://www.instagram.com/"><img class="icon-img" alt="instagram icon" src="https://cdn.icon-icons.com/icons2/1211/PNG/512/1491579602-yumminkysocialmedia36_83067.png"></a>
+                        <a href="https://www.facebook.com/"><img class="icon-img" alt="facebook icon" src="https://cdn4.iconfinder.com/data/icons/social-media-icons-the-circle-set/48/facebook_circle-512.png"></a>
+                    </div>
+                    <p id="copyright">&copy; Joshuaeup</p>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

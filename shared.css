@@ -1,0 +1,172 @@
+/* General CSS */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    width: 100vw;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100vw;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #0a0a0a;
+}
+
+/* Navigation Open */
+
+.nav-container {
+    position: fixed;
+    z-index: 1;
+    top:0;
+    background: #0a0a0a;
+    opacity: 0.7;
+    width: 100%;
+    margin: auto;
+    height: auto;
+}
+
+#nav-link-container {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    padding: 1vh;
+    text-align: center;
+}
+
+.nav-link {
+    display: inline-block;
+    margin: auto;
+    padding: 0.5vh;
+    font-size: 0.9em;
+    min-width: 5vh;
+    max-width: 10vh;
+    margin-left: 4vh;
+    margin-right: 4vh; 
+}
+
+.nav-click-link {
+    color: #CDCDCD;
+    text-decoration: none;
+}
+
+.nav-click-link:hover {
+    cursor: pointer;
+    color: rgb(230, 79, 33);
+}
+
+/* Navigation Close */
+
+.down-arrow-wrapper {
+    position: absolute;
+    bottom: 4em;
+    width: 100%;
+    text-align: center;
+    animation-name: bounce;
+    animation-duration: 1.8s; 
+    animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+    0% {bottom: 4em;}
+    50% {bottom: 4.8em;}
+    100% {bottom: 4em;}
+}
+
+.down-arrow {
+    width: auto;
+    height: 4em;
+}
+
+/* Footer Open */
+
+.footer-container {
+    position: relative;
+    bottom: 0;
+    background: #0a0a0a;
+    width: 100%;
+    color: #CDCDCD;
+    padding-top: 6vh; 
+    padding-bottom: 6vh; 
+    display: table;
+    border-top: #151515 5px solid;
+}
+
+.footer-row {
+    display: table-row;
+}
+
+.footer-left-container, .footer-right-container {
+    display: table-cell;
+    width: 50%;
+    padding-left: 20vh;
+    padding-right: 20vh;
+}
+
+.footer-icon-container {
+    width: 100%;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    text-align: center;
+}
+
+.footer-title {
+    font-size: 3vh;
+    text-align: center;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.footer-text {
+    font-size: 1.2em;
+    font-weight: bold;
+    line-height: 1.3em;
+    text-align: center;
+}
+
+
+.icon-img {
+    height: 5vh;
+    margin-left: 0.7vh;
+    margin-right: 0.7vh; 
+    width: auto;
+}
+
+#copyright {
+    text-align: center;
+    margin: auto;
+}
+
+/* Footer Close */
+
+/* Responsive Open */
+
+@media only screen and (max-width: 1200px) {
+    .nav-container {
+        height: auto;
+    }
+
+    .nav-link {
+        font-size: 0.5em;
+    }
+  
+    .footer-text {
+          font-size: 1em;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+ 
+    .footer-left-container, .footer-right-container {
+    display: block;
+    width: 70%;
+    margin: auto;
+    padding: 0;
+  }
+}
+
+/* Responsive Close */

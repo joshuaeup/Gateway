@@ -1,0 +1,124 @@
+/* Body Open */
+
+body {
+    background: #0A0A0A;
+}
+
+#tech-page-banner-container {
+    position: relative;
+    background: url("https://images.pexels.com/photos/732183/pexels-photo-732183.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260") no-repeat center top; 
+    background-size: cover; 
+    height: 100vh;
+    width: 100vw;
+}
+
+#tech-page-banner-title-container {
+    position: absolute;
+    top: 4.3rem;
+    width: 100%;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.774);
+    font-size: 4rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.grid-section-title-container {
+    margin-top: 5.5rem;
+    margin-bottom: 2.7rem;
+    width: auto;
+    text-align: center;
+    color: white;
+}
+
+.grid-tech-section-title {
+    color: rgb(252, 93, 45);
+    font-size: 4rem;
+    margin: 0;
+}
+
+.tech-grid-container {
+    position: relative;
+    background: transparent;
+    margin: auto;
+    text-align: center;
+    display: table;
+    border-collapse: collapse;
+    width: 90%;
+}
+
+.grid-container-left, .grid-container-right {
+    margin: auto;
+    height: auto;
+    width: 35vw;
+    background-color: #0F0F0F;
+    color: #ffffff;
+    padding: 32px 80px 32px 80px;
+    text-align: center;
+    display: block;
+}
+
+/* Grid Contents Open */
+
+.grid-title {
+    color: #ffffff;
+    font-size: 3rem;
+    margin-top: 0.4rem;
+    margin-bottom: 0;
+}
+
+.grid-text {
+    font-size: 1.3rem;
+    font-weight: 100;
+}
+
+.grid-link {
+    font-size: 1.3rem;
+    color: #5388d8;
+    text-decoration: none;
+}
+
+.grid-img {
+    margin-top: 3rem;
+    height: auto;
+    width: 100%;
+    border-radius: 2%;
+}
+
+/* Grid Contents Closed */
+
+
+/* Body Closed */
+
+/* Responsive Open */
+
+@media only screen and (max-width: 1330px) {
+    .grid-img {
+        height: 25vh;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    #tech-page-banner-title-container {
+        font-size: 1.8rem;
+    }
+
+    #companies-body-container {
+        padding-top: 1rem;
+    }
+
+    .grid-container-left, .grid-container-right {
+        height: auto;
+        width: 100%;
+    }
+
+    .grid-col {
+        width: 100%;
+    }
+
+    .grid-img {
+        height: 50vh;
+        width: auto;
+    }
+}
+
+/* Responsive Close */

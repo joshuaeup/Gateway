@@ -1,0 +1,167 @@
+/* Banner Open */
+
+#home-page-banner-container {
+    position: relative;
+    background: url("https://images.pexels.com/photos/417054/pexels-photo-417054.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260") no-repeat center top; 
+    background-size: cover; 
+    height: 100vh;
+    width: 100vw;
+}
+
+#home-page-banner-title-container {
+    position: absolute;
+    top: auto;
+    width: 100%;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.623);
+    font-size: 4rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
+/* Banner Close */
+
+/* Body Open */
+
+.body-main-container {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: auto;
+    width: 100%;
+    text-align: center;
+    display: table;
+    border-collapse: collapse;
+}
+
+.row {
+    height: auto;
+    width: 100%;
+    margin: auto;
+    display: table-row;
+}
+
+
+.section-col, .img-col {
+    vertical-align: top;
+    display: table-cell;
+    height: auto;
+    width: 50%;
+    padding: 4.3rem;
+    color:white;
+}
+
+.section-col {
+    text-align: left;
+}
+
+.img-col {
+    text-align: right;
+}
+
+
+.slideshow {
+    height: auto;
+    width: 100%;
+}
+
+.col-title {
+    color: #CDCDCD;
+    width: 100%;
+}
+
+.col-text {
+    color: #CDCDCD;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+}
+
+.body-section-text-container {
+    height: auto;
+    padding: 2.7rem;
+}
+
+
+.body-section-title {
+    font-size: 4rem;
+    margin: 0;
+    color: rgb(252, 93, 45);
+}
+
+.body-section-paragraph {
+    font-size: 1.5em;
+    font-weight: inherit;
+    line-height: 1.3em;
+}
+
+.paragraph-link {
+    color: white;
+}
+
+.paragraph-link:hover {
+    color: blue;
+}
+
+.title-style {
+    margin: 0;
+    text-align: center;
+}
+
+.top-row-style {
+    border-bottom: #151515 5px solid;
+}
+
+/* Body Close */
+
+/* Responsive Open */
+
+@media only screen and (max-width: 1200px) {
+    .section-col {
+        display: inline-block;
+        width: 100%;
+    }
+
+    .img-col {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .slideshow {
+        display: inline-block;
+        height: 80vh;
+        width: 70vw;
+        margin: auto;
+    }
+    
+    #home-page-banner-title-container {
+        font-size: 1.8em;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+  .section-col, .body-section-text-container {
+    text-align: center;
+    padding: 0;
+  }
+  
+  .slideshow {
+    height: auto;
+  }
+  
+  .body-section-title {
+    font-size: 3rem;
+    margin: 0;
+    color: rgb(252, 93, 45);
+  }
+  
+  .body-section-paragraph {
+    width: 80%;
+    margin: auto;
+  }
+}
+
+/* Responsive Close */
